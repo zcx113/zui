@@ -115,7 +115,7 @@
         options = that.getOptions(options);
 
         // Init lang
-        var lang = $.isPlainObject(options.lang) ? ($.extend(true, {}, Uploader.LANG[lang.lang || $.zui.clientLang()], options.lang)) : Uploader.LANG[options.lang];
+        var lang = $.isPlainObject(options.lang) ? ($.extend(true, {}, Uploader.LANG[options.lang || $.zui.clientLang()], options.lang)) : Uploader.LANG[options.lang];
         that.lang = lang;
 
         // Init file list element
